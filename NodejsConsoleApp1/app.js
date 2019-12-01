@@ -1,20 +1,17 @@
-﻿import * as fs from 'fs';
-import * as path from 'path';
-
-var data: string = fs.readFileSync('input01.txt','utf8');
-
-var array: string[] = data.split("\n");
-var total: number = 0;
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const fs = require("fs");
+var data = fs.readFileSync('input01.txt', 'utf8');
+var array = data.split("\n");
+var total = 0;
 for (var i = 0; i < array.length; i++) {
     if (array[i]) {
         total = total + calc(Number(array[i]));
     }
 }
 console.log(total);
-
-var total2: number = 0;
-var num: number = 0;
+var total2 = 0;
+var num = 0;
 for (var i = 0; i < array.length; i++) {
     if (array[i]) {
         num = calc(Number(array[i]));
@@ -25,12 +22,11 @@ for (var i = 0; i < array.length; i++) {
     }
 }
 console.log(total2);
-
-
-function calc(x: number): number {
-    var num: number = 0;
+function calc(x) {
+    var num = 0;
     if (x > 0) {
         num = (Math.floor(Number(x) / 3) - 2);
     }
     return num;
 }
+//# sourceMappingURL=app.js.map
