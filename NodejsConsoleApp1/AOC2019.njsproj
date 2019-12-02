@@ -13,7 +13,7 @@
     <ProjectGuid>3d9034cf-b19d-4c91-8231-37b39ae76b9e</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>app.ts</StartupFile>
+    <StartupFile>Day02.ts</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -34,7 +34,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Day02.ts" />
+    <TypeScriptCompile Include="Day01.ts" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
