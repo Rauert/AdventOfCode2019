@@ -181,3 +181,55 @@ q4 = new Set(Array.from(q4).sort());
 //Determine which asteroid to destroy first by calc closest manhatten distance to origin.
 
 //When calc 200th remeber offset!!
+
+var destroyed: number = 0;
+var destroyedCoord: number[] = [0, 0];
+var currQ: number = 0;
+var id: number;
+
+while (destroyed < 200) {
+    switch (currQ) {
+        case 0: {
+            if (l1.size > 0 && l1d.length > 0) {
+                id = idOfLowest(l1d);
+                destroyedCoord = l1d[id]; //May need to be a copy
+                l1d.splice(id, 1); //destroy
+                destroyed++;
+            }
+            currQ++;
+            break;
+        }
+        case 1: {
+                
+            break;
+        }
+        case 2: {
+                
+            break;
+        }
+        case 3: {
+                
+            break;
+        }
+        case 4: {
+
+            break;
+        }
+        case 5: {
+
+            break;
+        }
+        case 6: {
+
+            break;
+        }
+        case 7: {
+
+            break;
+        }
+            default: {
+                console.log("Invalid choice");
+                break;
+            }
+        }
+}
