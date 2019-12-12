@@ -34,6 +34,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Day09.ts" />
+    <TypeScriptCompile Include="Day11.ts" />
     <TypeScriptCompile Include="Day01.ts" />
     <TypeScriptCompile Include="Day07.ts" />
     <TypeScriptCompile Include="Day08.ts" />
